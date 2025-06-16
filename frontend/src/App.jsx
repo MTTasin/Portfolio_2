@@ -4,7 +4,7 @@ import { motion, useScroll, useSpring, useTransform, AnimatePresence, useMotionV
 import { Linkedin, Github, Twitter, Facebook, ArrowUp, X, Menu } from 'lucide-react';
 
 // API Configuration
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://tasinportfolio2.pythonanywhere.com";
 
 // A map for social icons from lucide-react
 const iconComponents = {
