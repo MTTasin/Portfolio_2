@@ -254,9 +254,9 @@ const ProjectCard = ({ project }) => {
                 <div className="flex flex-wrap gap-2 mb-4">
                     {project.technologies.map(tech => ( <span key={tech} className="bg-gray-700 text-indigo-400 text-xs font-semibold px-3 py-1 rounded-full">{tech}</span> ))}
                 </div>
-                <div className="flex justify-between items-center mt-6">
-                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-500 transition-colors duration-300" data-hover>Live Demo</a>
-                    <a href={project.githubRepo} target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-500 transition-colors duration-300" data-hover>GitHub</a>
+                <div className="flex justify-between items-end mt-6">
+                    {project.liveDemo && <a href={project.liveDemo} target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-500 transition-colors duration-300" data-hover>Live Demo</a>}
+                    {project.githubRepo && <a href={project.githubRepo} target="_blank" rel="noopener noreferrer" className="text-white hover:text-indigo-500 transition-colors duration-300" data-hover>GitHub</a>}
                 </div>
             </div>
         </motion.div>
